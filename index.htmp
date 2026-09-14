@@ -1,72 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-Frame Demo</title>
+<meta charset="utf-8">
+<title>My A-Frame Project</title>
 
-    <!-- A-Frame Library -->
-    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+<script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script&gt;
 </head>
 
-<body style="margin:0; overflow:hidden;">
+<body>
 
-    <a-scene>
+<a-scene>
 
-        <!-- Sky -->
-        <a-sky color="#87CEEB"></a-sky>
+<a-box
+position="0 1 -3"
+rotation="0 45 0"
+color="#4CC3D9">
+</a-box>
 
-        <!-- Ground -->
-        <a-plane
-            position="0 0 -4"
-            rotation="-90 0 0"
-            width="50"
-            height="50"
-            color="#3CB043">
-        </a-plane>
+<a-plane
+position="0 0 -4"
+rotation="-90 0 0"
+width="20"
+height="20"
+color="#7BC8A4">
+</a-plane>
 
-        <!-- Box -->
-        <a-box
-            position="-1 1 -5"
-            rotation="0 45 0"
-            color="#FF0000">
-        </a-box>
+<a-sky color="#ECECEC"></a-sky>
 
-        <!-- Sphere -->
-        <a-sphere
-            position="1 1.25 -4"
-            radius="0.75"
-            color="#4287f5">
-        </a-sphere>
-
-        <!-- Cylinder -->
-        <a-cylinder
-            position="3 1 -6"
-            radius="0.5"
-            height="2"
-            color="#FFC65D">
-        </a-cylinder>
-
-        <!-- Light -->
-        <a-light
-            type="directional"
-            intensity="1"
-            position="1 3 2">
-        </a-light>
-
-        <a-light
-            type="ambient"
-            intensity="0.5">
-        </a-light>
-
-        <!-- Camera -->
-        <a-camera
-            position="0 1.6 5"
-            wasd-controls
-            look-controls>
-        </a-camera>
-
-    </a-scene>
+</a-scene>
 
 </body>
 </html>
